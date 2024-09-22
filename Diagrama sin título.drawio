@@ -1,9 +1,69 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Página-1" id="vavEDoWmuLBhZqrft4IF">
-    <mxGraphModel>
+    <mxGraphModel dx="3054" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-17" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="210" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-1" value="&lt;div&gt;This is a model which supports many aspects,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Supports Sites, Locations and Warehouses etc.&lt;/div&gt;&lt;div&gt;Supports Categorization and Grouping&lt;/div&gt;&lt;div&gt;Support Generic Product (Ex. &quot;Table Clock&quot; and specific product &quot;Citizen C123 Multi Alarm Clock&quot; )&lt;/div&gt;&lt;div&gt;Also support Brand Variants (by various manufacturers)&lt;/div&gt;&lt;div&gt;Has CSM (color / size / model support) Ex. Bata Sandles (Color 45 Inch Blue color)&lt;/div&gt;&lt;div&gt;Product Instances with serials (such as TVs , Refrigerators etc.)&lt;/div&gt;&lt;div&gt;Lot control / Batch control with serial numbers.&lt;/div&gt;&lt;div&gt;Pack Size / UOM and UOM Conversion&lt;/div&gt;&lt;div&gt;Manufacturer and Brands as well as Suppliers&lt;/div&gt;&lt;div&gt;Also included example transaction table (Purchase order)&lt;/div&gt;&lt;div&gt;There are many other transaction types such as Issues, Transfers, Adjustments etc.&lt;/div&gt;&lt;div&gt;Hope this would help. Please let me know if you need further information on each table.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Cheers...!!!&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Wajira Weerasinghe.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sites&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;site_code&lt;/div&gt;&lt;div&gt;Site_name&lt;/div&gt;&lt;div&gt;Warehouse&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;site_id&lt;/div&gt;&lt;div&gt;warehouse_code&lt;/div&gt;&lt;div&gt;warehouse_name&lt;/div&gt;&lt;div&gt;Item Category&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;category_code&lt;/div&gt;&lt;div&gt;category_name&lt;/div&gt;&lt;div&gt;Item Group&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;group_code&lt;/div&gt;&lt;div&gt;group_name&lt;/div&gt;&lt;div&gt;Generic Product&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;generic_name&lt;/div&gt;&lt;div&gt;Product&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;product_code&lt;/div&gt;&lt;div&gt;category_id&lt;/div&gt;&lt;div&gt;group_id&lt;/div&gt;&lt;div&gt;brand_id&lt;/div&gt;&lt;div&gt;generic_id&lt;/div&gt;&lt;div&gt;model_id/part_id&lt;/div&gt;&lt;div&gt;product_name&lt;/div&gt;&lt;div&gt;product_description&lt;/div&gt;&lt;div&gt;product_price (current rate)&lt;/div&gt;&lt;div&gt;has_instances(y/n)&lt;/div&gt;&lt;div&gt;has_lots (y/n)&lt;/div&gt;&lt;div&gt;has_attributes&lt;/div&gt;&lt;div&gt;default_uom&lt;/div&gt;&lt;div&gt;pack_size&lt;/div&gt;&lt;div&gt;average_cost&lt;/div&gt;&lt;div&gt;single_unit_product_code (for packs)&lt;/div&gt;&lt;div&gt;dimension_group (pointing to dimensions)&lt;/div&gt;&lt;div&gt;lot_information&lt;/div&gt;&lt;div&gt;warranty_terms (general not specific)&lt;/div&gt;&lt;div&gt;is_active&lt;/div&gt;&lt;div&gt;deleted&lt;/div&gt;&lt;div&gt;product attribute type (color/size etc.)&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;attribute_name&lt;/div&gt;&lt;div&gt;product_attribute&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;product_id&lt;/div&gt;&lt;div&gt;attribute_id&lt;/div&gt;&lt;div&gt;product attribute value (this product -&amp;gt; red)&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;product_attribute_id&lt;/div&gt;&lt;div&gt;value&lt;/div&gt;&lt;div&gt;product_instance&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;product_id&lt;/div&gt;&lt;div&gt;instance_name (as given by manufacturer)&lt;/div&gt;&lt;div&gt;serial_number&lt;/div&gt;&lt;div&gt;brand_id (is this brand)&lt;/div&gt;&lt;div&gt;stock_id (stock record pointing qih, location etc.)&lt;/div&gt;&lt;div&gt;lot_information (lot_id)&lt;/div&gt;&lt;div&gt;warranty_terms&lt;/div&gt;&lt;div&gt;product attribute value id (if applicable)&lt;/div&gt;&lt;div&gt;product lot&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;lot_code/batch_code&lt;/div&gt;&lt;div&gt;date_manufactured&lt;/div&gt;&lt;div&gt;date_expiry&lt;/div&gt;&lt;div&gt;product attribute value id (if applicable)&lt;/div&gt;&lt;div&gt;Brand&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;manufacturer_id&lt;/div&gt;&lt;div&gt;brand_code&lt;/div&gt;&lt;div&gt;brand_name&lt;/div&gt;&lt;div&gt;Brand Manufacturer&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;manufacturer_name&lt;/div&gt;&lt;div&gt;Stock&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;product_id&lt;/div&gt;&lt;div&gt;warehouse_id, zone_id, level_id, rack_id etc.&lt;/div&gt;&lt;div&gt;quantity in hand&lt;/div&gt;&lt;div&gt;product attribute value id (if applicable) [we have 4 red color items etc.]&lt;/div&gt;&lt;div&gt;Product Price Records&lt;/div&gt;&lt;div&gt;product_id&lt;/div&gt;&lt;div&gt;from_date&lt;/div&gt;&lt;div&gt;product_price&lt;/div&gt;&lt;div&gt;Purchase Order Header&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;supplier_id&lt;/div&gt;&lt;div&gt;purchase_date&lt;/div&gt;&lt;div&gt;total_amount&lt;/div&gt;&lt;div&gt;Purchase Order Line&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;po_id&lt;/div&gt;&lt;div&gt;product_id&lt;/div&gt;&lt;div&gt;unit_price&lt;/div&gt;&lt;div&gt;quantity&lt;/div&gt;&lt;div&gt;Supplier&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;supplier_code&lt;/div&gt;&lt;div&gt;supplier_name&lt;/div&gt;&lt;div&gt;supplier_type&lt;/div&gt;&lt;div&gt;product_uom&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;uom_name&lt;/div&gt;&lt;div&gt;product_uom_conversion&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;from_uom_id&lt;/div&gt;&lt;div&gt;to_uom_id&lt;/div&gt;&lt;div&gt;conversion_rule&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;chat muy posiblemente asi sea mi esquema de base de datos, esto lo saque de reddit, aunqe hay muchisimo que mejorar, como agregarias el soporte par distintas sucursales? o con lo de deposito ya estaria ok&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="20" width="1140" height="1930" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZN7bx8qQ0LilswmV9KuV-2" target="ZN7bx8qQ0LilswmV9KuV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-2" value="site" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZN7bx8qQ0LilswmV9KuV-3" target="ZN7bx8qQ0LilswmV9KuV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-3" value="warehouse" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-5" value="item" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZN7bx8qQ0LilswmV9KuV-7" target="ZN7bx8qQ0LilswmV9KuV-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-7" value="group" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZN7bx8qQ0LilswmV9KuV-8" target="ZN7bx8qQ0LilswmV9KuV-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-8" value="category" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-9" value="brand" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-10" value="generic item" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-11" value="sub category" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-13" value="csm" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-19" value="instance - serial" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-20" value="lot" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-21" value="pack size" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-900" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-22" value="uom" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1040" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZN7bx8qQ0LilswmV9KuV-23" value="supplier" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1180" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
